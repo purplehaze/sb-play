@@ -1,0 +1,15 @@
+server:
+  port: 8888
+
+spring:
+#  profiles:
+#    active: native
+  cloud:
+    config:
+      server:
+#        native:
+#          searchLocations: file:///temp/config-repo/{application}
+#          searchLocations: classpath:./repo/{application}
+        git :
+          uri: https://github.com/purplehaze/{application}-properties-repo
+          searchPaths: {profile}
