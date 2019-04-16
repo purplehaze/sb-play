@@ -11,5 +11,6 @@ spring:
 #          searchLocations: file:///temp/config-repo/{application}
 #          searchLocations: classpath:./repo/{application}
         git :
-          uri: https://github.com/purplehaze/{application}-properties-repo
+#          uri: https://github.com/purplehaze/{application}-properties-repo
+          uri: https://github.com/purplehaze/config-client-properties-repo
           searchPaths: {profile}
